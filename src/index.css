@@ -1,0 +1,65 @@
+:root {
+  /* Dark Mode */
+  --dark-blue: hsl(209, 23%, 22%);
+  --very-dark-blue: hsl(207, 26%, 17%);
+
+  /* Light Mode */
+  --very-dark-blue-light-text: hsl(200, 15%, 8%);
+  --dark-gray-light-mode-input: hsl(0, 0%, 52%);
+  --very-light-gray: hsl(0, 0%, 98%);
+
+  /* Both Modes */
+  --white: hsl(0, 0%, 100%);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--very-light-gray);
+  /* display: flex; */
+  /* justify-content: center; */
+  /* : center; */
+  /* min-width: 320px;
+  min-height: 100vh; */
+}
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 30px;
+}
+
+.filter {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+  gap: 30px;
+  align-items: start;
+  margin-left: 30px;
+}
+
+/* .filter .input{
+  align-self: stretch;
+  height: 100%;
+} */
+
+
+
+
+@media (min-width:375px) and (max-width:500px) {
+  .container{
+    padding: 0 10px;
+  }
+}
+
+
+
+@media (min-width: 500px) {
+  .filter {
+    flex-direction: row;
+    margin-top: 50px;
+  }
+ 
+
+}

@@ -1,0 +1,32 @@
+nav {
+  background-color: hsl(0, 0%, 100%);
+
+  color: var(--very-dark-blue);
+  margin: auto;
+  text-align: center;
+  /* height: 200px; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px;
+  /* width: 100%; */
+}
+
+.navItem {
+  /* width:100%; */
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mode {
+  width: 20px;
+}
+
+.btn {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
