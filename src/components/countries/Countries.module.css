@@ -1,6 +1,6 @@
 .countries{
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns:1fr ; 
     gap: 30px;
     margin-top: 50px;
     justify-content: center;
@@ -12,5 +12,19 @@
  /* Add some padding inside the card container */
  .cardConatienr {
     padding: 2px 16px;
+
+  }
+
+  @media(min-width: 700px) and (max-width: 830px){
+
+    .countries{ 
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media(min-width:840px){
+    .countries{ 
+      grid-template-columns: repeat(4, minmax(0, 20%)); 
+    }
 
   }
